@@ -15,17 +15,24 @@ So when c++17 will be [fully supported by them](http://en.cppreference.com/w/cpp
 
 ### Build
 
+##### Cmake
+
 You can use your best IDE(clion, xcode...) to build the full project with cmake or in comand line :
 
-`g++ -std=c++14 *.cpp -lz -lboost_system -lboost_filesystem -lmagic -o sisyphe`bash
+`mkdir build && cd build && cmake ..`
+
+##### GCC
+
+`g++ -std=c++14 *.cpp -lz -lboost_system -lboost_filesystem -lmagic -o sisypheCpp`
+
 
 ### Use
 
-The first argument to send to the binary sisyphe is the path to explore:
+The first argument to send to the binary SisypheCpp is the path to explore:
 
-eg:`./sisyphe /path/to/analyse` will generate something like:
+eg:`./sisypheCpp /path/to/analyse` will generate something like:
 
-[!screen](./resources/screen.png)
+![screen](./resources/screen.png)
 
 
 ### What does it do?
