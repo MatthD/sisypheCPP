@@ -13,19 +13,24 @@ Info : I cannot use `<filesystem>` which is a c++17 implementation that clang & 
 So when c++17 will be [fully supported by them](http://en.cppreference.com/w/cpp/compiler_support), I will change to it. 
 
 
-## Build
+### Build
 
 You can use your best IDE(clion, xcode...) to build the full project with cmake or in comand line :
 
 `g++ -std=c++14 *.cpp -lz -lboost_system -lboost_filesystem -lmagic -o sisyphe`bash
 
-## Use
+### Use
 
 The first argument to send to the binary sisyphe is the path to explore:
 
 eg:`./sisyphe /path/to/analyse` will generate something like:
 
 [!screen](./resources/screen.png)
+
+
+### What does it do?
+
+For the moment sisypheCPP can find files recursively & detect it's mimetype on a single thread.
 
 
 
