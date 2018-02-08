@@ -20,8 +20,9 @@ include_directories( ${ZLIB_INCLUDE_DIRS} )
 include_directories( ${LibMagic_INCLUDE_DIRS} )
 
 file(COPY magic DESTINATION .)
+file(COPY src/worker.json DESTINATION .)
 
 
-set(SOURCE_FILES main.cpp Magic.cpp Magic.h)
+set(SOURCE_FILES main.cpp src/worker/filetype/filetype.cpp src/worker/filetype/filetype.h src/worker/out/out.cpp src/worker/out/out.h src/worker/walkerfs/walkerfs.cpp src/worker/walkerfs/walkerfs.h)
 add_executable(sisypheCpp ${SOURCE_FILES})
 target_link_libraries( sisypheCpp  ${Boost_LIBRARIES} ${ZLIB_LIBRARY} ${LibMagic_LIBRARY} ${JSONCPP_LIBRARIES})

@@ -1,0 +1,3 @@
+{
+  "workers" : ["walkerfs", "filetype", "out"]
+}

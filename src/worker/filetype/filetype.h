@@ -10,11 +10,11 @@
 #include <cassert>
 
 using namespace std;
-class Magic {
+class Filetype {
   magic_t magic;
   public:
-    Magic();
-    explicit Magic(const char*);
+    Filetype();
+    explicit Filetype(const char*);
     string detectMimetype(string);
     void destroyMagic();
 };
